@@ -1,0 +1,143 @@
+﻿html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    height: 100%;
+    background-color: rgb(255, 211, 232);
+}
+
+.LoginAndPassword {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Buttons {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LogIn {
+    width: 120px;
+}
+
+.SignIn {
+    width: 120px;
+}
+
+.Logo {
+    margin: 200px 200px 100px 200px;
+}
+body, p {
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loginBlock {
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    height: 50px;
+    display: inline-block;
+    margin: 20px 10px 15px 40px;
+    padding: 35px 15px;
+}
+
+#Error {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    height: 10%;
+    top: 91%;
+    color: Red;
+    font-weight: bold;
+    text-align: center;
+}
+
+#txtMessage {
+    width: 450px;
+}
+
+#LastRefresh {
+    display: inline;
+    position: absolute;
+    font-size: xx-small;
+    text-align: right;
+    top: 7%;
+    left: 10%;
+    width: 80%;
+}
+
+#Username {
+    display: inline;
+    position: absolute;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    top: 7%;
+    left: 10%;
+    width: 50%;
+}
+
+#Users {
+    position: absolute;
+    width: 25%;
+    left: 1%;
+    height: 98%;
+    top: 1%;
+    background-color: #ddd;
+    text-align: left;
+}
+
+#Messages {
+    position: absolute;
+    width: 40%;
+    left: 27%;
+    height: 80%;
+    top: 1%;
+    text-align: left;
+    font-size: x-small;
+    overflow-y: scroll;
+}
+
+#inputForm {
+    position: absolute;
+    width: 80%;
+    left: 27%;
+    height: 12%;
+    top: 82%;
+    min-height: 60px;
+    vertical-align: middle;
+}
+
+.serverMes {
+    color: #808080;
+    font-weight: bold;
+}
+
+button {
+    font-weight: bold;
+    width: 100px;
+    margin-right: 1000px;
+}
+
+table, textarea {
+    width: 100%;
+}
+    
+    

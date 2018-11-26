@@ -1,0 +1,44 @@
+﻿@model AjaxChat.Models.ChatModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chat InToSoft</title>
+    @Styles.Render("~/Content/Site.css")
+    <link rel="shortcut icon" href="~/images/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="Username">
+    </div>
+    <div class="container" id="container">
+        <div class="LoginAndPassword">
+            <input id="Login" type="text" />
+            <input id="Password" type="password" />
+        </div>
+        <div class="Buttons">
+            <button id="LogIn" class="LogIn">
+                Log in
+            </button>
+            <button id="SignIn" class="SignIn">
+                Sign in
+            </button>
+        </div>
+        <div class="Logo">
+            <img class="logo" src="~/images/icon1.jpg" alt="Logo">
+        </div>
+    </div>
+    <div id="Error">
+    </div>
+    @Ajax.ActionLink("Login", "Index", new { user = "" },
+        new AjaxOptions { UpdateTargetId = "container", OnFailure = "LoginOnFailure", OnSuccess = "LoginOnSuccess" },
+        new { @id = "LoginButton", @style = "visibility:hidden;" })
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.min.js")
+    @Scripts.Render("~/Scripts/chat.js")
+</body>
+</html>
